@@ -1,0 +1,825 @@
+/*animação do nav bar */
+.body{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+	font-family: 'Gothic A1', sans-serif;
+    font-size:16px;
+    width: 100%;
+	}
+	p{
+	color:#6c6c6f;
+	font-size:1em;
+    }
+    @font-face {
+        font-family: DollieScript;
+        src: url(../fonts/KOMIKAX_.ttf);
+        
+    }
+      h1 {
+    font-family: DollieScript;
+    font-size: 80px;
+    background-image: url(../imagens/txtcolorgif11.gif);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transform: rotate(-3deg); 
+    -moz-transform: rotate(-3deg);
+
+    }
+  
+    
+    
+
+.custom-toggler.navbar-toggler {
+      border-color: rgb(255, 255, 255);
+        
+}
+.custom-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-brand  span{
+	color: #cf3a85;
+	font-size:25px;font-weight:700;letter-spacing:0.1em;
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+}
+.navbar-brand {
+	color: #fff;
+	font-size:25px;
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+	font-weight:700;
+    letter-spacing:0.1em;
+   
+}
+.image-icon{
+  width: 120px!important;
+  margin-left: 90px;
+}
+
+.navbar-nav .nav-item .nav-link{
+	padding: 1.1em 1em!important;
+	font-size: 120%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+   font-family: 'Gothic A1', sans-serif;
+   
+}
+.navbar-nav .nav-item .nav-link:hover{color:#cf3a85;}
+.navbar-expand-md .navbar-nav .dropdown-menu{
+	border-top:3px solid #cf3a85;
+}
+.dropdown-item:hover{background-color:#cf3a85;color:#fff;}
+nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
+    -moz-transition: padding-top .3s,padding-bottom .3s;
+    transition: padding-top .3s,padding-bottom .3s;
+    border: none;
+	}
+	
+ .shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #080a0cc0;
+}
+/*classe banner fake desligada por 
+
+.banner{
+	background-image:url();
+	text-align: center;
+    color: #fff;
+   
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.banner-text{
+	padding:200px 0 150px 0;
+}
+.banner-heading{
+	font-family: 'Lobster', cursive;
+	font-size: 75px;
+    font-weight: 700;
+    line-height: 100px;
+    margin-bottom: 30px;
+	color:#fff;
+}
+.banner-sub-heading{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 50px;
+	color:#fff;
+}
+
+.btn-banner{
+	padding:5px 20px;
+	border-radius:10px;
+	font-weight:700;
+	line-height:1.5;
+	text-align:center;
+	color:#fff;
+	text-transform:uppercase;
+}
+.text-intro{
+	width:90%;
+	margin:auto;
+	text-align:center;
+	padding-top:30px;
+}
+opção*/
+
+/* Mouse icon class  */
+.mouse-icon {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    height: 40px;
+    width: 24px;
+    margin-left: -15px;
+    display: block;
+    z-index: 10;
+    opacity: 0.7;
+  }
+  .mouse-icon .wheel {
+    -webkit-animation-name: drop;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    -webkit-animation-name: drop;
+            animation-name: drop;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+  }
+  .mouse-icon .wheel {
+    position: relative;
+    border-radius: 10px;
+    background: #fff;
+    width: 2px;
+    height: 6px;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @-webkit-keyframes drop {
+    0% {
+      top: 5px;
+      opacity: 0;
+    }
+    30% {
+      top: 10px;
+      opacity: 1;
+    }
+    100% {
+      top: 25px;
+      opacity: 0;
+    }
+  }
+  @keyframes drop {
+    0% {
+      top: 5px;
+      opacity: 0;
+    }
+    30% {
+      top: 10px;
+      opacity: 1;
+    }
+    100% {
+      top: 25px;
+      opacity: 0;
+    }
+  }
+
+/* Mouse icon class  */
+ 
+
+/*paralax efeitos*/
+.header-site {
+    background-image: url(../imagens/fundoback.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: aliceblue;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.content-site{
+    padding-top: 180px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   background-color: #ffffff;
+}
+.parallax{
+    background-image: url(../imagens/fundoparalxex.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: aliceblue;
+    padding-top: 50px;
+    padding-bottom: 80px; 
+}
+.game-play{
+    background-image: url(../imagens/hero-img93.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: aliceblue;
+    padding-top: 200px;
+    padding-bottom: 100px; 
+}
+
+.viloes {
+    display: flex;
+    max-width: 1080;
+    flex-wrap: wrap;  
+    margin: 70px;   
+}
+
+.viloes > div {
+    flex: 1 1 200;
+    margin: 0 auto;
+}
+
+.personagem{
+    width: 80%;
+}
+
+#garça-paralax{
+ margin: 0 auto;
+ margin-top: 20px;
+ width: 80%;
+    
+
+}
+#logo-game{
+    margin: 0 auto;
+    width: 80%;
+    margin-top:-90px;
+}
+#carol-rocha{  
+
+margin-bottom: -80px;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*footer */
+.footer-site{
+    background-color:#e02457;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 1px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.footer-distributed{	
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+    color:  #ffffff;
+    font-size: 5px;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  rgb(255, 255, 255);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #ffffff;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+
+
+
+/* equipe code */
+
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: #fff
+}
+
+
+
+.intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto
+}
+
+.intro p {
+    margin-bottom: 0
+}
+
+.people {
+    padding: 50px 0;
+    cursor: pointer
+}
+
+.item {
+    margin-bottom: 30px
+}
+
+.item .box {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 230px;
+    position: relative;
+    overflow: hidden
+}
+
+.item .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(143, 28, 47, 0.493);
+    transition: opacity 0.15s ease-in;
+    opacity: 0;
+    padding-top: 80px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15)
+}
+
+.item:hover .cover {
+    opacity: 1
+}
+
+.item .name {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.item .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 20px
+}
+
+.social {
+    font-size: 18px
+}
+
+.social a {
+    color: inherit;
+    margin: 0 10px;
+    display: inline-block;
+    opacity: 0.7
+}
+
+.social a:hover {
+    opacity: 1
+}
+
+/* Ids */
+#Historia {
+    font-size: 10px;
+};
+#Game-play {
+    font-size: 10px;
+};
+#Time {
+font-size: 10px;
+};
+   
+#Personagens {
+    font-size: 10px;
+   
+}
+
+
+
+
+/*mobile device */
+
+@media (max-width: 800px) {
+
+    .footer-distributed .footer-center p{
+        display: inline;
+        color: #ffffff;
+        vertical-align: middle;
+        margin:0;
+        }
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+    }
+    .personagem {
+        width: 99% !important;
+
+    }
+    .personagem {
+        width: 90% !important;
+        margin: 0px !important;
+       margin-right: -80px !important;
+       margin-left: +80px !important;
+
+    }
+
+
+}
+
+
+
+@media (max-width:768px){
+    .footer-center{
+        display: inline-block;
+    }
+    .icon-caps {
+        width: 20% !important;
+    }
+    .footer-links{
+        display: none;
+    }
+	.banner-text{
+	    padding:150px 0 150px 0;
+    }
+    #texto-historia{
+        font-size: 15px;
+        letter-spacing: -1px;
+    }
+   .banner-sub-heading{
+	     font-size: 23px;
+         font-weight: 200;
+         line-height: 23px;
+         margin-bottom: 40px;
+    }
+   .image-icon{
+         width: 120px!important;
+         margin-left: 20px;
+    }
+   .shrink {
+       padding-top: 0;
+       padding-bottom: 0;
+       background-color: #434446b6;
+    }
+    .personagem {
+        width: 80% !important;
+        margin: 0px !important;
+       margin-right: -80px !important;
+       margin-left: +80px !important;
+
+    }
+    #garça-paralax{
+        margin: 0 auto;
+        margin-top: -20px;
+        align-items: center;      
+    }
+    #logo-game{
+        display: none;
+    }
+    #carol-rocha{  
+        margin:0 auto;
+        align-items: center;
+    }
+      .header-site {
+        background-image: url(../imagens/fundoback.jpg);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: aliceblue;
+        padding-top: 100px;
+        padding-bottom: 150px;
+    }
+    .game-play{
+        background-image: url(../imagens/hero-img93.jpg);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: aliceblue;
+        padding-top: 200px;
+        padding-bottom: 100px; 
+    }
+    
+
+    
+}
+
+
+
+@media (max-width:500px){  
+    h1{
+        font-size: 30px !important;
+        background-image: url(../imagens/txtcolorgif11.gif);
+        -webkit-transform: rotate(-3deg); 
+        -moz-transform: rotate(-3deg);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 10px;
+        
+    }
+   
+    
+    .footer-distributed .footer-center p{
+	display: inline;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+    }
+    .personagem {
+        width: 50% !important;
+        margin: 0px !important;
+       margin-right: -80px !important;
+       margin-left: +80px !important;
+       margin-top: -100px !important;
+
+    }
+    .game-play{
+        background-image: url(../imagens/hero-img93.jpg);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: aliceblue;
+        padding-top: 100px;
+        padding-bottom: 100px; 
+    }
+    #texto-historia{
+        font-size: 15px;
+        letter-spacing: -2px;
+    }
+	.navbar-nav .nav-item .nav-link{
+	padding: 0.7em 1em!important;
+	font-size: 100%;
+    font-weight: 500;
+    }
+	.banner-text{
+	padding:150px 0 150px 0;
+    }
+   .banner-heading{
+	font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    }
+   .banner-sub-heading{
+	font-size: 10px;
+    font-weight: 200;
+    line-height: 10px;
+    margin-bottom: 40px;
+    }
+   .image-icon{
+        width: 120px!important;
+        margin-left: 20px;
+    }
+    .shrink {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: #434446b6;
+    }
+    .header-site {
+        background-image: url(../imagens/fundoback.jpg);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: aliceblue;
+        padding-top: 0px;
+        padding-bottom: 150px;
+    }
+    .content-site{
+        padding-top: 180px;
+        padding-bottom: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+       background-color: #ffffff;
+    }
+    .parallax{
+        background-image: url(../imagens/fundoparalxex.jpg);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: aliceblue;
+        padding-top: 50px;
+        padding-bottom: 200px; 
+    }
+    .viloes{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .viloes > div {
+        flex: 1 1 200;
+        margin: 5px;
+        margin: 0 auto;
+        
+    }
+    .footer-site{
+        background-color: #e02457;
+        color: cadetblue;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .logo-motion{
+        display:flex ;
+        flex-wrap:wrap;
+        max-width:600px;
+     
+     }
+     .logo-motion > div{
+       margin:0 auto;
+     }
+     
+     #garça-paralax{
+       margin-top: 250px;
+     }
+     #logo-game{
+   
+        display: none;
+     }
+     #carol-rocha{
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 60px;
+      
+     }
+     
+
+} 
